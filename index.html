@@ -16,9 +16,18 @@
       <div class="editContent">
         <h3 id='formHeader'>{{ user.intro }}</h3>
         <form id='form'>
-          <p class='formData'>First Name: <input type='text' ng-model="firstname"/></p>
-          <p class='formData'>Last Name: <input type='text' ng-model="lastname"/></p>
-          <p class='formData'>Email: <input type='text' ng-model="email"/></p>
+          <p class='formData' ng-click="user.editFn()" ng-blur="expression">
+            First Name: {{ user.firstname }}
+            <span id=""><input type='text' ng-model="firstname" ng-show="user.inputFn"/></span>
+          </p>
+          <p class='formData' ng-click="user.editLn()">
+            Last Name: {{ user.lastname }}
+            <span id=""><input type='text' ng-model="lastname" ng-show="user.inputLn"/></span>
+          </p>
+          <p class='formData' ng-click="user.editE()">
+            Email: {{ user.email }}
+            <span id=""><input type='text' ng-model="email" ng-show="user.inputE"/></span>
+          </p>
         </form>
       </div>
       <div class="editBorder footer">
