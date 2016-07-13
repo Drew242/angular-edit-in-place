@@ -1,0 +1,38 @@
+.userEdit {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  min-height: 40%;
+  margin-top: 5%;
+  border-radius: 8px;
+  font-family: sans-serif;
+}
+
+.editBorder {
+  padding: 1%;
+  border-radius: 8px;
+  background-color: #3399ff;
+  color: white;
+}
+
+.editContent {
+  padding: 3%
+}
+
+.header {
+  border-radius: 8px 8px 0 0;
+}
+
+.footer {
+  border-radius: 0 0 8px 8px;
+}
+
+#formHeader {
+  margin-bottom: 6%;
+}
+
+.formData {
+  margin-top: 3%;
+  margin-left: 10%;
+  text-align: left;
+}

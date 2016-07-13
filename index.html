@@ -4,11 +4,27 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
     <script src="user.js"></script>
+    <link rel='stylesheet' href='main.css'/>
   </head>
 
-  <body ng-controller="userCtrl as userCtrl">
+  <body ng-controller="user as user">
 
-    {{ userCtrl.message }}
+    <div class="userEdit">
+      <div class="editBorder header">
+        <h2>{{ user.message }}</h2>
+      </div>
+      <div class="editContent">
+        <h3 id='formHeader'>{{ user.intro }}</h3>
+        <form id='form'>
+          <p class='formData'>First Name: <input type='text' ng-model="firstname"/></p>
+          <p class='formData'>Last Name: <input type='text' ng-model="lastname"/></p>
+          <p class='formData'>Email: <input type='text' ng-model="email"/></p>
+        </form>
+      </div>
+      <div class="editBorder footer">
+        <p>&copy copyright 2016</p>
+      </div>
+    </div>
 
   </body>
 </html>

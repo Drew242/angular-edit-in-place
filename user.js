@@ -1,4 +1,3 @@
-console.log('angular time');
 angular.module('UserApp', []);
 
 angular.module('UserApp')
@@ -8,7 +7,10 @@ angular.module('UserApp')
   ]);
 
 function userCtrl($http) {
-  console.log('FML', $http);
-  var userCtrl = this;
-  userCtrl.message = "Edit User";
+  var user       = this;
+  user.message   = "Edit User";
+  user.intro     = "Profile Name";
+  user.firstname = "";
+  user.lastname  = "";
+  user.email  = ""; 
 }
