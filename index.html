@@ -11,10 +11,10 @@
 
     <div class="userEdit">
       <div class="editBorder header">
-        <h2>{{ user.message }}</h2>
+        <h1>{{ user.message }}</h1>
+        <p>{{ user.subMessage }}</p>
       </div>
       <div class="editContent">
-        <h3 id='formHeader'>{{ user.intro }}</h3>
         <form id='form'>
           <p class='formData'>
             <span ng-click="user.editFn()" ng-show="user.showFn">First Name: {{ user.firstname }}</span>
