@@ -16,17 +16,17 @@
       <div class="editContent">
         <h3 id='formHeader'>{{ user.intro }}</h3>
         <form id='form'>
-          <p class='formData' ng-click="user.editFn()" ng-blur="expression">
-            First Name: {{ user.firstname }}
-            <span id=""><input type='text' ng-model="firstname" ng-show="user.inputFn"/></span>
+          <p class='formData'>
+            <span ng-click="user.editFn()" ng-show="user.showFn">First Name: {{ user.firstname }}</span>
+            <span><input class='inputBox' ng-blur="user.editFn()" ng-model="user.firstname" ng-show="user.inputFn"/></span>
           </p>
-          <p class='formData' ng-click="user.editLn()">
-            Last Name: {{ user.lastname }}
-            <span id=""><input type='text' ng-model="lastname" ng-show="user.inputLn"/></span>
+          <p class='formData'>
+            <span ng-click="user.editLn()" ng-show="user.showLn">Last Name: {{ user.lastname }}</span>
+            <span><input class='inputBox' ng-blur="user.editLn()" ng-model="user.lastname" ng-show="user.inputLn"/></span>
           </p>
-          <p class='formData' ng-click="user.editE()">
-            Email: {{ user.email }}
-            <span id=""><input type='text' ng-model="email" ng-show="user.inputE"/></span>
+          <p class='formData'>
+            <span ng-click="user.editE()" ng-show="user.showE">Email: {{ user.email }}</span>
+            <span><input class='inputBox' ng-blur="user.editE()" ng-model="user.email" ng-show="user.inputE"/></span>
           </p>
         </form>
       </div>

@@ -10,7 +10,10 @@ function userCtrl($http) {
   var user       = this;
   user.inputFn   = false;
   user.inputLn   = false;
-  // user.inputE    = false;
+  user.inputE    = false;
+  user.showFn    = true;
+  user.showLn    = true;
+  user.showE     = true;
   user.message   = "Edit User";
   user.intro     = "Profile Name";
   user.firstname = "John";
@@ -18,16 +21,16 @@ function userCtrl($http) {
   user.email     = "john.doe@aol.com";
 
   user.editFn = function() {
-    console.log('editFn');
       user.inputFn = !user.inputFn;
+      user.showFn  = !user.showFn;
   }
   user.editLn = function() {
-    console.log('editLn');
       user.inputLn = !user.inputLn;
+      user.showLn  = !user.showLn;
   }
   user.editE = function() {
-    console.log('editE');
       user.inputE = !user.inputE;
+      user.showE = !user.showE;
   }
 
 }
